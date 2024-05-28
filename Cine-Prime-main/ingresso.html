@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/ingresso.css" />
+    <title>Ingresso</title>
+  </head>
+  <header>
+    <div class="header-content">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./horario.html">Horario</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <body>
+    
+    <div class="movie-container">
+      <div class="formup" id="form_up"></div>
+      <label>Reserva:</label>
+      <select id="movie">
+        <form method="post" action="cadeiras.php">
+          <h2>Reservar Assento</h2>
+          <label for="name"><b>Nome</b></label>
+          <input type="text" placeholder="digite nome da reserva" name="nome" required>
+          <input type="hidden" name="seat" id="seat_input">
+          <button type="submit" class="bt_confirmar">Reservar</button>
+      </form>
+
+      <button onclick="cadeiraSorteada()" class="bt_sorteio">Sortear Prêmio</button>
+      <div id="ganhador"></div>
+    </div>
+  
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Vazia</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selecionada</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Ocupado</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <!-- Fileira A -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <span class="row-label">A</span>
+      </div>
+
+      <!-- Fileira B -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <span class="row-label">B</span>
+      </div>
+
+      <!-- Fileira C -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <span class="row-label">C</span>
+      </div>
+
+      <!-- Fileira D -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <span class="row-label">D</span>
+      </div>
+
+      <!-- Fileira E -->
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <span class="row-label">E</span>
+      </div>
+    </div>
+
+</div>
+
+<script src="./js/ingresso.js">
+   </script>
+  </body>
+</html>
